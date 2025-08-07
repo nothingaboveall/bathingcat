@@ -1,0 +1,97 @@
+body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
+    animation-duration: .3s;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: Inter, sans-serif;
+    margin: 0;
+    line-height: inherit;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary) / .6) hsl(var(--background) / .7);
+    border-color: hsl(var(--border));
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+:root {
+    --background: 224 15% 8%;
+    --foreground: 210 40% 98%;
+    --card: 224 15% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 224 15% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 100% 65%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 224 15% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 224 15% 15%;
+    --muted-foreground: 217 10% 70%;
+    --accent: 217 100% 55%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 224 15% 12%;
+    --input: 224 15% 12%;
+    --ring: 217 100% 65%;
+    --radius: .75rem;
+    --radius-sm: .5rem;
+    --radius-md: .75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.25rem;
+    --radius-2xl: 1.5rem;
+    --radius-3xl: 2rem;
+    --radius-full: 9999px;
+}
+
+html {
+    scroll-behavior: smooth;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+}
+
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / .6);
+    border-radius: 8px;
+    border: 2px solid hsl(var(--background) / .7);
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--background) / .7);
+    border-radius: 8px;
+}
